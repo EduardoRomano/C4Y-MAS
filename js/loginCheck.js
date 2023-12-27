@@ -11,7 +11,7 @@ function updateNavbar() {
         $('#profileLink').text('Log In').attr('href', 'login.html');
     }
 }
-if (localStorage.getItem('userLoggedIn') === null) {
-    localStorage.setItem('userLoggedIn', 'false')
+if (localStorage.getItem("userLoggedIn") === null) {
+    localStorage.setItem("userLoggedIn", "false")
 }
 updateNavbar();
