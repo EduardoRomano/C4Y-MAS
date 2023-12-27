@@ -1,0 +1,158 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <!-- Basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Site Metas -->
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="shortcut icon" href="images/c4yicon.png" type="">
+    <title>Cake4You</title>
+    <!-- bootstrap core css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <!-- font awesome style -->
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <!-- Custom styles -->
+    <link href="css/style.css" rel="stylesheet" />
+    <!-- responsive style -->
+    <link href="css/responsive.css" rel="stylesheet" />
+    <!--JQuery-->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+<body class="sub_page">
+    <div class="hero_area">
+        <!-- header section strats -->
+        <header class="header_section gradient" style="box-shadow: 0px 5px 50px 2px rgba(0,0,0,.8);">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg custom_nav-container ">
+                    <a class="navbar-brand" href="index.html"><img width="250" src="images/cake4you-t.png" alt="#" /></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class=""> </span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link borda-soft" href="mycake4you.html">MyCake4You</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link borda-soft" href="#" onclick="showYourCake4YouModal()">YourCake4You</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link borda-soft" href="cake4us.html">Cake4Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link borda-soft" href="perfil.html" id="profileLink">Perfil</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <!-- end header section -->
+    </div>
+    <!-- why section -->
+    <div class="card col-8 mt-5 d-flex mx-auto mb-5">
+        <div class="card-header" style="background-color:white;">
+            <h1 style="color:black;"><b>Obrigado pela sua compra!</b></h1>
+        </div>
+        <div class="card-body text-center" style="font-size:larger">
+                Os confeiteiros foram informados da compra, será notificado quando esta estiver perparada e quando estiver prestes a chegar à sua localização!
+        </div>
+    </div>
+    <!-- end why section -->
+    <!-- Include the YourCake4You modal -->
+    <div id="yourCake4YouModalContainer"></div>
+    <script>
+        $(function () {
+            $("#yourCake4YouModalContainer").load("yourcake4you.html");
+        });
+    </script>
+    <!-- footer section -->
+    <footer class="footer_section gradient" style="box-shadow: 0px 5px 50px 5px rgba(0,0,0,.8);">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 footer-col">
+                    <div class="footer_contact">
+                        <h4>
+                            Contacta-nos:
+                        </h4>
+                        <div class="contact_link_box">
+                            <a href="">
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                <span>
+                                    1600 Pennsylvania Avenue, N.W.
+                                </span>
+                            </a>
+                            <a href="">
+                                <i class="fa fa-phone" aria-hidden="true"></i>
+                                <span>
+                                    +1 (855) 444-8888
+                                </span>
+                            </a>
+                            <a href="">
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                                <span>
+                                    cake4you@f4e.com
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 footer-col">
+                    <div class="footer_detail">
+                        <a href="index.html" class="footer-logo">
+                            Cake4You
+                        </a>
+                        <p>
+                            Descubra a doçura dos momentos especiais conosco. Faça parte da nossa história açucarada!
+                        </p>
+                        <div class="footer_social">
+                            <a href="">
+                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                            </a>
+                            <a href="">
+                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                            </a>
+                            <a href="">
+                                <i class="fa fa-linkedin" aria-hidden="true"></i>
+                            </a>
+                            <a href="">
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                            </a>
+                            <a href="">
+                                <i class="fa fa-pinterest" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 footer-col">
+                    <div class="map_container">
+                        <div class="map">
+                            <div id="googleMap"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-info">
+                <div class="col-lg-7 mx-auto px-0">
+                    <p>
+                        &copy; <span id="displayYear"></span> Todos os direitos reservados por Food4Everyone
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer section -->
+    <!-- popper js -->
+    <script src="js/popper.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.js"></script>
+    <!-- custom js -->
+    <script src="js/custom.js"></script>
+    <script src="js/loginCheck.js"></script>
+</body>
+</html>
